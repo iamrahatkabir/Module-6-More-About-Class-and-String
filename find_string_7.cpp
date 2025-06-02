@@ -6,9 +6,11 @@ int main()
     string s = "programming";
 
 
-    if(s.find("gram") != -1)
+    int position = s.find("gram"); // Find the postion of 'g' character;
+
+    if(position != -1) //if find() dosn't found "gram" it will return -1;
     {
-        cout << "Found" << endl;
+        cout << position << "Found" << endl;
     }
     else{
         cout << "Not Found" << endl;
